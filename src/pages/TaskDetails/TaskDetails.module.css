@@ -1,0 +1,131 @@
+
+.task_details{
+   max-width: 39.5rem;
+   margin: 0 auto;
+   padding: 0 1rem;
+
+}
+
+
+.actions {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto 0.875rem; 
+}
+
+.dates span {
+    font-size: 0.75rem !important;
+}
+
+.btns {
+    margin-left: auto;
+}
+
+.btns button:first-child {
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 0.875rem;
+}
+
+.btns button:last-child {
+    margin-left: 0.938rem;
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.created {
+    margin-bottom: 0.75rem;
+}
+
+.created span:first-child {
+    letter-spacing: .06rem;
+}
+
+.created, .modified {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+}
+[disabled="true"] {
+    background: red;
+}
+
+.requirments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+
+.requirments, .task_head_Line {
+    margin-bottom: 1.5rem;
+}
+
+.task_head_Line h3 {
+    margin: 0;
+    color: var(--green);
+}
+
+.requirments, .task_head_Line, .task_description {
+    background-color: rgb(255, 255, 255);
+    padding: 0.875rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+.task_description p {
+    word-wrap: anywhere;
+    white-space: pre-line;
+    font-size: var(--regular-font-size);
+    color: var(--text-color);
+}
+
+@media (max-width: 450px) {
+    .task_head_Line h3 {
+        font-size: 1.25rem;
+    }
+
+    .task_description h4 {
+        font-size: 1rem;
+    }
+
+    .btns {
+        margin-bottom: 0.875rem
+    }
+    .actions  {
+        flex-direction: column-reverse;
+
+    }
+    .requirments div {
+        margin: 0;
+    }
+    .requirments div:nth-child(1),
+    .requirments div:nth-child(1) + div {
+        margin-bottom: 0.875rem;
+    }
+    
+    .requirments div:nth-child(2n+1) {
+        width: 60%;
+    }
+
+    .requirments div:nth-child(2n) {
+        width: 40%;
+    }
+}

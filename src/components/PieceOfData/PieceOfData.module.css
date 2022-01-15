@@ -1,0 +1,30 @@
+
+
+.pieceOfData span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: capitalize;
+
+}
+
+.pieceOfData span:nth-child(1) {
+    margin-right: 0.313rem;
+    display: flex;
+}
+
+
+
+
+/* handle left to right  */
+._revers {
+    flex-direction: row-reverse;
+}
+
+._revers span {
+    margin: 0;
+}
+
+._revers span:nth-child(2){
+    margin-right: 0.313rem;
+}

@@ -1,0 +1,187 @@
+
+
+/* 
+
+    ==> TaskDtails Page Skeleton Loader <==
+            ---------------------------
+            === 1. ActionSkeleton
+            === 2. HeadLineSkeleton
+            === 3. DescriptionSkeleton
+            ---------------------------
+*/
+
+
+/* 
+    ---------------------
+    === 1. ActionSkeleton 
+    ---------------------
+*/
+.skeleton {
+    animation: skeleton-loading 500ms linear infinite alternate;
+    -webkit-animation: skeleton-loading 500ms linear infinite alternate;
+}
+
+.action_Skeleton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.action_Skeleton .left_float .skeleton {
+    margin-bottom: 0.5rem;
+    width: 130px;
+    height: 6px;
+}
+
+.action_Skeleton .left_float .skeleton:last-child {
+    margin-bottom: 0;
+}
+
+.action_Skeleton .right_float {
+    
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.action_Skeleton .right_float .skeleton:nth-child(1) {
+    margin-left: 0.75rem;
+    
+    width: 90px;
+    height: 40px;
+}
+
+.action_Skeleton .right_float .skeleton {
+    margin-left: 0.75rem;
+    width: 65px;
+    height: 40px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.action_Skeleton .right_float .skeleton:first-child {
+    margin-left: 0;
+}
+
+
+/* 
+    ---------------------
+    === 2. HeadLineSkeleton
+    ---------------------
+*/
+.title_Skeleton {
+    max-width: 250px;
+    height: 18px;
+}
+
+/* 
+    ---------------------
+    === 3. DescriptionSkeleton
+    ---------------------
+*/
+
+
+.description_Skeleton .skeleton:nth-child(1),
+.description_Skeleton .skeleton:nth-child(2),
+.description_Skeleton .skeleton:nth-child(3) {
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    height: 10px;
+}
+
+.description_Skeleton .skeleton:nth-child(3) {
+    margin-bottom: 1.5rem;
+    max-width: 40%;
+}
+
+.description_Skeleton ._h {
+    width: 150px;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+
+.description_Skeleton .list .item {
+    display: flex;
+    margin-bottom: 0.25rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.description_Skeleton ._circle {
+    width: 8px;
+    height: 8px!important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.description_Skeleton .text {
+    margin-left: 14px;
+    width: 100px;
+    height: 6px!important;
+}
+
+
+
+/* 
+    --------------------------
+    === 4. DescriptionSkeleton
+    --------------------------
+*/
+
+.requirments_Skeleton {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%!important;
+
+}
+
+.requirments_Skeleton .skeleton {
+    width: 77px!important;
+    height: 9px!important;
+}
+
+
+@media (max-width: 450px) {
+    .action_Skeleton {
+        flex-direction: column-reverse;
+        
+    }
+    .action_Skeleton .right_float{
+        margin-bottom: 1rem;
+    }
+    .action_Skeleton .left_float{
+        margin-left: auto;
+    }
+
+
+
+    .requirments_Skeleton {
+        justify-content: none;
+    }
+
+
+    .requirments_Skeleton .skeleton:nth-child(odd) {
+        margin-right: 20%!important;
+    }
+
+    .requirments_Skeleton .skeleton:nth-child(even) {
+        margin: 0!important;
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+
+    }
+}

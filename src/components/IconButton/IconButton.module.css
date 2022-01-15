@@ -1,0 +1,72 @@
+
+
+.plusIcon {
+    border-radius: 3.125rem;
+    background-color: var(--green);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    width: 1.805777777777778em;
+    height: 1.805777777777778em;
+    cursor: pointer;
+    box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 2;
+    font-size: 2.25rem;
+
+    transition: all 150ms ease;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+}
+
+.plusIcon:hover {
+    width: 4.666666666666667em;
+}
+
+.plus {
+    
+    pointer-events: none;
+    position: absolute;
+    left: 0.6111111111111111em; /*24.203125px*/
+} 
+
+.label {
+    position: absolute;
+    left: 2.833777777777778em;
+    font-size: 1.125rem;
+    text-align: right;
+    width: 5.25em;
+    font-weight: 700;
+    pointer-events: none;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 150 ease;
+    -webkit-transition: opacity 150 ease;
+    -moz-transition: opacity 150 ease;
+    -ms-transition: opacity 150 ease;
+    -o-transition: opacity 150 ease;
+}
+
+.plusIcon:hover .label {
+    opacity: 1;
+}
+
+@media (max-width: 414px) {
+
+    .plusIcon {
+        font-size: 1.75rem;
+    }
+
+    .label {
+        font-size: .875rem;
+    }
+
+}

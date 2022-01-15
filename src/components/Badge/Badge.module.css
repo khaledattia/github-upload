@@ -1,0 +1,25 @@
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8em;
+    height: 1.857142857142857em;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: var(--regular-font-size);
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all 150ms ease;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+}
+
+
+@media (max-width: 570px) {
+    .badge {
+        margin-left: auto;
+        font-size: 0.75rem;
+    }
+}

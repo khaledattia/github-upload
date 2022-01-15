@@ -1,0 +1,24 @@
+.noResults p:nth-child(1) {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--maroon);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--danger);
+}
+
+.noResults p:nth-child(2) {
+    text-align: center;
+    font-size: 0.875rem;
+
+}
+
+.noResults p:nth-child(2) span {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.image-container {
+    max-width: 28rem;
+    margin: 0 auto;
+}

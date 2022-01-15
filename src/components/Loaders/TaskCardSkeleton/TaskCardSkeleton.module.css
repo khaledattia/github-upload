@@ -1,0 +1,251 @@
+._skeleton {
+    border: 1px solid var(--border-color);
+    max-width: 500;
+    margin: 0 auto 0.875rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+._skeleton:last-child {
+    margin-bottom: 0;
+}
+
+.head,
+.body {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.right_float {
+    margin-left: auto;
+    min-width: 130px;
+    padding-left: 1rem;
+}
+
+/* 
+    -----------------
+    === Card Head ===
+    ----------------- 
+*/
+
+.head {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.skeleton {
+    animation: skeleton-loading 250ms linear infinite alternate;
+    -webkit-animation: skeleton-loading 350ms linear infinite alternate;
+}
+
+.head .left_float .skeleton {
+    height: 12px;
+    width: 100px;
+}
+
+.head .right_float .skeleton {
+    width: 100%;
+    height: 23px;
+    margin-left: auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+
+/* 
+    -----------------
+    === Card body ===
+    -----------------
+*/
+.body {
+    display: flex;
+    padding: 1.5rem 1rem;
+}
+
+.body .left_float  {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.body .left_float .skeleton {
+    max-width: 100%;
+    margin-bottom: .25rem;
+    height: 4px;
+}
+
+.body .left_float .skeleton:first-child {
+    height: 1rem;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.body .skeleton:last-child {
+    margin-bottom: none;
+    max-width: 50%;
+}
+
+.right_float {
+    border-left: 1px solid var(--border-color);
+}
+
+.body .right_float .skeleton {
+    height: 9px;
+    width: 75px;
+    margin-bottom: 0.75rem;
+}
+
+.body .right_float .skeleton:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 
+    -----------------
+    === Card Footer ===
+    -----------------
+*/
+
+.footer {
+    display: flex;
+    padding: 0.875rem 1rem;
+}
+
+.footer .left_float {
+    margin-right: auto;
+}
+
+.footer .left_float .skeleton {
+    height: 8px;
+    width: 85px;
+    margin-bottom: 0.5rem;
+}
+
+.footer .left_float .skeleton:last-child {
+    margin-bottom: 0;
+}
+
+.footer .right_float .skeleton {
+    height: 8px;
+    width: 85px;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+}
+
+.footer .right_float .skeleton:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+@media (max-width: 744px) {
+    .body {
+        flex-direction: column;
+    }
+
+    .body .left_float {
+        padding: 0;
+    }
+    .body .right_float {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        padding: 0;
+        margin-top: 0.875rem;
+    }
+    
+    .body .right_float .skeleton {
+        margin-left: 1rem;
+        
+        margin-bottom: 0;
+    }
+    
+    .body .right_float .skeleton:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .head {
+        display: block;
+    }
+
+    .head .left_float {
+        display: none;
+    }
+
+    .head .right_float {
+        border: none
+    }
+
+    .head .right_float .skeleton {
+        width: 90px;
+        height: 18px;
+    }
+
+    .body .right_float {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .body .right_float .skeleton:nth-child(2n-1) {
+        margin-right: 40%;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .body .right_float .skeleton:nth-child(2n) {
+        
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .head .right_float {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .head .right_float .skeleton {
+        width: 100%;
+    }
+    .body .right_float .skeleton:nth-child(2n-1) {
+        margin-right: 18%;
+    }
+
+    .footer {
+        display: none;
+
+    }
+}
+
+
+
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+
+    }
+}

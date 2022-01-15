@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Neuton:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --headline-font: 'Neuton', sans-serif;
+  --content-font: 'Montserrat', 'Poppins',sans-serif;
+  --regular-font-size: 0.875rem;
+  --logo-fontSize: 2.25rem;
+  --h1-fontSize:  2.5rem;
+  --constant-subtract: 0.25rem;
+  --h2-fontSize: 
+  calc(var(--h1-fontSize) - (var(--constant-subtract) * 2));
+  --h3-fontSize: 
+  calc(var(--h1-fontSize) - (var(--constant-subtract) * 3));
+  --h4-fontSize: 
+  calc(var(--h1-fontSize) - (var(--constant-subtract) * 4));
+  --h5-fontSize: 
+  calc(var(--h1-fontSize) - (var(--constant-subtract) * 5));
+  --h6-fontSize: 
+  calc(var(--h1-fontSize) - (var(--constant-subtract) * 6));
+
+  --page-padding: 4rem;
+
+  --green: rgb(20, 168, 0);
+  --navy: rgb(23, 43, 77);
+  --Page-bg: rgb(242, 247, 242);
+  --border-color: rgb(196, 196, 196);
+  --text-color : rgb(101, 115, 91);
+  --danger: rgb(168, 0, 0);  
+}
+
+@media (max-width: 414px) {
+  :root {
+    --logo-fontSize: 1.75rem;
+    --h1-fontSize: 2rem;
+
+  }
+  
+}
+
+@media (max-width: 280px ) {
+  :root {
+    --logo-fontSize: 1.5rem;
+    --h1-fontSize: 1.75rem;
+  }
+}
+
+html,body {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--content-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+}
+
+#root {
+  background-color: var(--Page-bg);
+  min-height: 100Vh;
+}
+
+
+
+h1 {
+  font-size: var(--h1-fontSize);
+}
+
+h2 {
+  font-size: var(--h2-fontSize);
+}
+
+h3 {
+  font-size: var(--h3-fontSize);
+}
+
+h4 {
+  font-size: var(--h4-fontSize);
+}
+
+h5 {
+  font-size: var(--h5-fontSize);
+}
+
+h6 {
+  font-size: var(--h6-fontSize);
+}
+
+.d-flex {
+  display: flex;
+}

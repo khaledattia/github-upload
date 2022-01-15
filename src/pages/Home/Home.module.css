@@ -1,0 +1,35 @@
+
+.timeLineContainer {
+    max-width: 39.5rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.timeLine {
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.cardWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+}
+
+.cardWrapper {
+    margin-bottom: 1.5rem;
+}
+
+.bottomLabel {
+    text-transform: capitalize;
+    color: #C4C4C4;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    pointer-events: none;
+}
